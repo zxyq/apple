@@ -1,0 +1,133 @@
+* {
+  &::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
+
+body, ul, li, ol, h1, h2, h3, h4, h5, h6,p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  color: #8B8B8B;
+  background-color: #FFF;
+  font-size: 12px;
+  line-height: 1.5em;
+  font-family: Arial, 'Microsoft Yahei', STHeiti;
+  margin:0;
+}
+button{
+  outline:none;
+}
+@mixin juzhong($top:0,$left:0,$right:0,$bottom:0) {
+  position: absolute;
+  margin: auto;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+}
+.aside{
+  position: relative;
+  max-width: 2560px;
+  height: 200px;
+  border-top: 2px solid white;
+}
+.aside span{
+  width: 1px;
+  height: 1px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.aside li{
+  height: 200px;
+  width: 25%;
+  float: left;
+  &:nth-child(1) a{
+      display: block;
+      background-image: url(images/iphone_6s_large.jpg);
+      background-size: 360px 200px;
+      background-position: center center;
+      height: 200px;
+  }
+  &:nth-child(2){
+    overflow: hidden;
+    display: block;
+    background-image: url(images/promo_applepay_geo_alt_large.jpg);
+    background-size: 640px 200px;
+    background-position: center center;
+    height: 200px;
+  }
+  &:nth-child(3){
+    display: block;
+    background-image: url(images/macbook_large.jpg);
+    background-size: 360px 200px;
+    background-position: center center;
+    height: 200px;
+  }
+  &:nth-child(4){
+    display: block;
+    background-image: url(images/accessories_large.jpg);
+    background-size: 360px 200px;
+    background-position: center center;
+    height: 200px;
+   }
+}
+
+@media screen and(max-width: 1068px){
+  .aside li{
+    width: 50%;
+    a{
+      display: block;
+      background-size: 640px 200px;
+      background-position: center center;
+      height: 200px;
+    }
+    &:nth-child(1) a{
+      background-image: url(images/iphone_6s_medium.jpg);
+      border-bottom: 2px solid white;
+    }
+    &:nth-child(2){
+      background-image: url(images/promo_applepay_geo_alt_medium.jpg);
+      border-bottom: 2px solid white;
+    }
+    &:nth-child(3){
+      background-image: url(images/macbook_medium.jpg);
+    }
+    &:nth-child(4){
+      background-image: url(images/accessories_medium.jpg);
+    }
+  }
+}
+
+@media screen and(max-width: 735px){
+  .aside li{
+    width: 100%;
+    a{
+      display: block;
+      background-size: 736px 200px;
+      background-position: center center;
+      height: 200px;
+      border-bottom: 2px solid white;
+    }
+    &:nth-child(1) a{
+      background-image: url(images/iphone_6s_small.jpg);
+    }
+    &:nth-child(2){
+      background-image: url(images/promo_applepay_geo_alt_small.jpg);
+    }
+    &:nth-child(3){
+      background-image: url(images/macbook_small.jpg);
+    }
+    &:nth-child(4){
+      background-image: url(images/accessories_small.jpg);
+    }
+  }
+}
