@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apple(中国) - 官方网站</title>
     <link rel="stylesheet" href="index1.css"/>
+    <script src="./js/jquery-1.12.0.js"></script>
+    <script src="./js/index.js"></script>
 </head>
 <body>
 
@@ -12,22 +15,109 @@
     <div class="ac-gn-content">
         <!--变小时候的布局-->
         <ul class="ac-gn-header">
-            <li class="ac-gn-item ac-gn-menuicon">
+            <li class="ac-gn-item ac-gn-menuicon small-list-sousuo">
                 <a href="#" class="ac-gn-menuanchor ac-gn-menuanchor-open">
                     <span class="ac-gn-link-text">打开菜单</span>
                 </a>
             </li>
+            <!--*****************************************-->
+            <ul class="ac-gn-list1 small-list">
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-mac small-list-return" style="border: none">
+                    <a href="#" class="ac-gn-link ac-gn-link-mac">
+                        <span class="ac-gn-link-text">×</span>
+                    </a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-mac" style="display: block">
+                    <a href="#" class="ac-gn-link ac-gn-link-mac" style="font-size: 20px">
+                        <span class="ac-gn-link-text">Mac</span>
+                    </a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-ipad" style="display: block">
+                    <a href="#" class="ac-gn-link ac-gn-link-ipad" style="font-size: 20px">
+                        <span class="ac-gn-link-text">Ipad</span>
+                    </a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-iphone" style="display: block">
+                    <a href="#" class="ac-gn-link ac-gn-link-iphone" style="font-size: 20px">
+                        <span class="ac-gn-link-text">Iphone</span>
+                    </a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-watch" style="display: block">
+                    <a href="#" class="ac-gn-link ac-gn-link-watch" style="font-size: 20px">
+                        <span class="ac-gn-link-text">Watch</span>
+                    </a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-music" style="display: block">
+                    <a href="#" class="ac-gn-link ac-gn-link-music" style="font-size: 20px">
+                        <span class="ac-gn-link-text">Music</span>
+                    </a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-support" style="display: block">
+                    <a href="#" class="ac-gn-link ac-gn-link-support" style="font-size: 20px">
+                        <span class="ac-gn-link-text">技术与支持</span>
+                    </a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-search" style="display: block">
+                    <a href="#" class="ac-gn-link ac-gn-link-search">
+                        <span class="ac-gn-search-placeholder" style="font-size: 20px">搜索 apple.com</span>
+                    </a>
+                </li>
+            </ul>
+            <!--************************************-->
             <li class="ac-gn-item ac-gn-apple">
                 <a href="#" class="ac-gn-link ac-gn-link-apple">
                     <span class="ac-gn-link-text">Apple</span>
                 </a>
             </li>
-            <li class="ac-gn-item ac-gn-bag ac-gn-bag-small">
+            <li class="ac-gn-item ac-gn-bag ac-gn-bag-small ac-gn-item-xiala">
                 <a href="#" class="ac-gn-link ac-gn-link-bag">
                     <span class="ac-gn-link-text">购物袋</span>
                 </a>
             </li>
         </ul>
+        <!--变小的时候点击左边的下拉列表
+        <ul class="ac-gn-list">
+            <li class="ac-gn-item ac-gn-apple">
+                <a href="#" class="ac-gn-link ac-gn-link-apple">
+                    <span class="ac-gn-link-text">Apple</span>
+                </a>
+            </li>
+            <li class="ac-gn-item ac-gn-item-menu ac-gn-mac">
+                <a href="#" class="ac-gn-link ac-gn-link-mac">
+                    <span class="ac-gn-link-text">Mac</span>
+                </a>
+            </li>
+            <li class="ac-gn-item ac-gn-item-menu ac-gn-ipad">
+                <a href="#" class="ac-gn-link ac-gn-link-ipad">
+                    <span class="ac-gn-link-text">Ipad</span>
+                </a>
+            </li>
+            <li class="ac-gn-item ac-gn-item-menu ac-gn-iphone">
+                <a href="#" class="ac-gn-link ac-gn-link-iphone">
+                    <span class="ac-gn-link-text">Iphone</span>
+                </a>
+            </li>
+            <li class="ac-gn-item ac-gn-item-menu ac-gn-watch">
+                <a href="#" class="ac-gn-link ac-gn-link-watch">
+                    <span class="ac-gn-link-text">Watch</span>
+                </a>
+            </li>
+            <li class="ac-gn-item ac-gn-item-menu ac-gn-music">
+                <a href="#" class="ac-gn-link ac-gn-link-music">
+                    <span class="ac-gn-link-text">Music</span>
+                </a>
+            </li>
+            <li class="ac-gn-item ac-gn-item-menu ac-gn-support">
+                <a href="#" class="ac-gn-link ac-gn-link-support">
+                    <span class="ac-gn-link-text">技术与支持</span>
+                </a>
+            </li>
+            <li class="ac-gn-item ac-gn-item-menu ac-gn-search">
+                <a href="#" class="ac-gn-link ac-gn-link-search">
+                    <span class="ac-gn-search-placeholder">搜索 apple.com</span>
+                </a>
+            </li>
+        </ul> -->
         <!--正常时候的布局-->
         <ul class="ac-gn-list">
             <li class="ac-gn-item ac-gn-apple">
@@ -79,6 +169,9 @@
     </div>
 </nav>
 <!--banner-->
+<!--1.ipad pro-->
+<div class="page_below">
+
 <article class="hero-gallery with-paddlenav evergreen">
     <!--下面三个点-->
     <nav class="dotnav">
@@ -106,13 +199,18 @@
         </ul>
     </nav>
     <!--大图-->
-    <div class="ac-gallery-slidecontainer" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; transition: transform 0s, left 0s; transform: translateX(-1349px) translateY(0px);">
-        <section class="hero-gallery-item hero-gallery-item-hero-ipad_pro_family ac-gallery-currentitem" style="position: absolute; transform: translateZ(0px); left: 1349px;">
+    <div class="ac-gallery-slidecontainer"
+         style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; transition: transform 0s, left 0s; transform: translateX(-1349px) translateY(0px);">
+        <!--ipad pro-->
+        <section class="hero-gallery-item hero-gallery-item-hero-ipad_pro_family ac-gallery-currentitem"
+                 style="display:none;position: absolute; transform: translateZ(0px); left: 1349px;">
             <div class="hero-content">
                 <a href="#" class="backing-link"></a>
+
                 <div class="copy">
                     <div class="copy-inner">
                         <h2 class="product-pro"></h2>
+
                         <h3 class="product-text centeralign">
                             你的下一台电脑，
                             <br>
@@ -147,8 +245,81 @@
                 </div>
             </div>
         </section>
+        <!--iwatch-->
+        <section class="hero-gallery-item hero-gallery-item-hero-apple_watch_trio ac-gallery-currentitem"
+                 style="display:none;position: absolute; transform: translateZ(0px); left: 1349px;">
+            <div class="hero-content">
+                <a href="#" class="backing-link"></a>
+
+                <div class="copy">
+                    <div class="copy-inner">
+                        <h2 class="product-pro"></h2>
+
+                        <h3 class="product-text centeralign">
+                            一目了然，就是你。
+                        </h3>
+                        <ul class="links">
+                            <li>
+                                <a href="#">
+                                    进一步了解
+                                    <span class="icon icon-chevronright"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    观看主题演讲
+                                    <span class="icon icon-play"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hero-wrapper">
+                    <figure class="hero-image hero-image-a">
+                        <div class="hero-image-inner"></div>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!--iphone-->
+        <section class="hero-gallery-item hero-gallery-item-hero-iphone_se ac-gallery-currentitem"
+                 style="position: absolute; transform: translateZ(0px); left: 1349px;">
+            <div class="hero-content">
+                <a href="#" class="backing-link"></a>
+
+                <div class="copy">
+                    <div class="copy-inner">
+                        <h2 class="product-pro"></h2>
+
+                        <h3 class="product-text centeralign">
+                            一小部的一大步
+                        </h3>
+                        <ul class="links">
+                            <li>
+                                <a href="#">
+                                    进一步了解
+                                    <span class="icon icon-chevronright"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    观看主题演讲
+                                    <span class="icon icon-play"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hero-wrapper">
+                    <figure class="hero-image hero-image-a">
+                        <div class="hero-image-inner"></div>
+                    </figure>
+                </div>
+            </div>
+        </section>
     </div>
 </article>
+<!--2. iwatch-->
 <!--四个小图片-->
 <ul class="aside">
     <li class="large-3 medium-6 small-12"><a href=""><span>iphone6s</span></a></li>
@@ -360,6 +531,7 @@
             <a href="#" style="color:#999;">京ICP备10214630</a>
         </p>
     </div>
+</div>
 </div>
 </body>
 </html>

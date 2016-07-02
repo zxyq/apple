@@ -192,6 +192,7 @@ $grid : 12;
   }
 }
 
+/******用sass代码生成十二栅格响应式******/
 /*下部响应式*/
 @for $i from 5 through 10{
   .with-#{$i}-columns .ac-gf-directory-column{
@@ -289,7 +290,7 @@ guanyu
 
 
 
-/******用sass代码生成十二栅格响应式******/
+
 
 
 //最下部
@@ -478,6 +479,10 @@ guanyu
     height: 44px;
     z-index: 1;
     vertical-align: top;
+    transition: all 200ms;
+    &:hover{
+      opacity: 0.7;
+    }
   }
 }
 
@@ -485,7 +490,7 @@ guanyu
   .ac-gn-link-apple{
     background-repeat: no-repeat;
     background-size: 20px 44px;
-    background-image: url(./images/logo.svg);
+    background-image: url(images/logo.svg);
     background-position: center center;
     width: 20px;
   }
@@ -519,7 +524,7 @@ guanyu
   }
   .ac-gn-link-mac{
     background-repeat: no-repeat;
-    background-image: url(./images/mac.svg);
+    background-image: url(images/mac.svg);
     background-position: center center;
     background-origin: content-box;
     background-size: cover;
@@ -528,7 +533,7 @@ guanyu
   }
   .ac-gn-link-ipad{
     background-repeat: no-repeat;
-    background-image: url(./images/ipad.svg);
+    background-image: url(images/ipad.svg);
     background-position: center center;
     background-origin: content-box;
     background-size: cover;
@@ -537,7 +542,7 @@ guanyu
   }
   .ac-gn-link-iphone{
     background-repeat: no-repeat;
-    background-image: url(./images/iphone.svg);
+    background-image: url(images/iphone.svg);
     background-position: center center;
     background-origin: content-box;
     background-size: cover;
@@ -546,7 +551,7 @@ guanyu
   }
   .ac-gn-link-watch{
     background-repeat: no-repeat;
-    background-image: url(./images/watch.svg);
+    background-image: url(images/watch.svg);
     background-position: center center;
     background-origin: content-box;
     background-size: cover;
@@ -555,7 +560,7 @@ guanyu
   }
   .ac-gn-link-music{
     background-repeat: no-repeat;
-    background-image: url(./images/music.svg);
+    background-image: url(images/music.svg);
     background-position: center center;
     background-origin: content-box;
     background-size: cover;
@@ -564,7 +569,7 @@ guanyu
   }
   .ac-gn-link-support{
     background-repeat: no-repeat;
-    background-image: url(./images/jishuyizhichi.svg);
+    background-image: url(images/jishuyizhichi.svg);
     background-position: center center;
     background-origin: content-box;
     background-size: cover;
@@ -574,14 +579,14 @@ guanyu
   .ac-gn-link-search{
     background-repeat: no-repeat;
     background-size: 20px 44px;
-    background-image: url(./images/sousuo.svg);
+    background-image: url(images/sousuo.svg);
     background-position: center center;
     width: 20px;
   }
   .ac-gn-link-bag{
     background-repeat: no-repeat;
     background-size: 18px 44px;
-    background-image: url(./images/qianbao.svg);
+    background-image: url(images/qianbao.svg);
     background-position: center center;
     width: 18px;
   }
@@ -596,7 +601,7 @@ guanyu
     left: 0;
     width: 100%;
     height: 48px;
-    overflow: hidden;
+    //overflow: hidden;
     .ac-gn-apple{
       position: absolute;
       width: 48px;
@@ -609,7 +614,7 @@ guanyu
     .ac-gn-link-bag{
       background-repeat: no-repeat;
       background-size: 18px 44px;
-      background-image: url(./images/qianbao.svg);
+      background-image: url(images/qianbao.svg);
       background-position: center center;
       width: 18px;
     }
@@ -636,10 +641,44 @@ guanyu
     z-index: 2;
     top: 0;
     background-position: center center;
-    background: url(./images/sousuo.svg);
+    background: url(images/sousuo.svg);
+  }
+}
+.small-list{
+  background: black;
+  width: 100%;
+  height:0;
+  transition:all 1s linear .5s;
+  li{
+    background: black;
+    width: 85%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    border-bottom: 1px solid #333333;
+    z-index: 9999999;
+    height: 48px;
+    line-height: 48px;
   }
 }
 
+.ac-gn-search-placeholder{
+  position: relative;
+  left: 30px;
+  line-height: 48px;
+  font-size: 20px;
+  font-family: "微软雅黑", "宋体", "sans-serif";
+  font-weight: 100;
+}
+@media screen and(max-width: 767px){
+  .small-list{
+    display: none;
+  }
+  .page_below{
+    display: block;
+  }
+}
 @media screen and(max-width: $small){
   #ac-globalnav .ac-gn-list{
     display: none;
@@ -781,6 +820,7 @@ guanyu
   width: 100%;
   height: 100%;
 }
+
 .copy {
   pointer-events: none;
   position: relative;
@@ -811,15 +851,19 @@ guanyu
   //padding-bottom: 254px;
 }
 .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-content .copy-inner {
-  //position: relative;
-  //display: inline-block;
-  //vertical-align: middle;
   position: absolute;
   top: 25px;
   width: 100%;
-  //height: auto;
-  //margin: 0;
-  //padding: 0;
+}
+.hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-content .copy-inner {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+}
+.hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-content .copy-inner {
+  position: absolute;
+  top: 25px;
+  width: 100%;
 }
 .ac-gallery-slidecontainer{
   .centeralign{
@@ -849,11 +893,17 @@ guanyu
     width: 139px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./images/ipad_pro_medium.png);
+    background-image: url(images/ipad_pro_medium.png);
     margin-bottom: 0.25em;
   }
 
 .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-content .copy-inner .product-pro {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background-repeat: no-repeat;
+}
+.hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-content .copy-inner .product-pro {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
@@ -938,10 +988,13 @@ guanyu
   .ipad-pro-geo-heading .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-content .hero-image-a .hero-image-inner {
     margin-bottom: auto;
   }
+  .ipad-pro-geo-heading .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-content .hero-image-a .hero-image-inner {
+  margin-bottom: auto;
+  }
 
 
   .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-content .hero-image-a .hero-image-inner, .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-content .hero-image-a .homeguides-image-element, .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-content .hero-image-a .homeguides-image-positioner .hero-image-inner, .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-content .hero-image-a .homeguides-image-positioner .homeguides-image-element {
-    background-image: url(./images/ipad_pro_family_medium.jpg);
+    background-image: url(images/ipad_pro_family_medium.jpg);
     background-size: 1310px 541px;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -957,7 +1010,7 @@ guanyu
 
 @media screen and(max-width: $small){
   .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-content .hero-image-a .hero-image-inner, .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-content .hero-image-a .homeguides-image-element, .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-content .hero-image-a .homeguides-image-positioner .hero-image-inner, .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-content .hero-image-a .homeguides-image-positioner .homeguides-image-element{
-    background-image: url(./images/ipad_pro_family_small.jpg);
+    background-image: url(images/ipad_pro_family_small.jpg);
     background-size: 440px 182px;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -984,7 +1037,7 @@ guanyu
     width: 106px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./images/ipad_pro_small.png);
+    background-image: url(images/ipad_pro_small.png);
     margin-bottom: 0.25em;
   }
   .hero-gallery .hero-content .copy-inner .product-text {
@@ -1105,4 +1158,228 @@ html.no-touch .paddlenav-onhover .paddlenav-arrow {
   font-weight: 200;
   opacity: .6;
   transition: 250ms opacity linear, 250ms color linear, 250ms background-color linear;
+}
+
+//变小的时候点击左边的下拉列表
+//@media screen and(max-width: $small){
+//  #ac-globalnav{
+//    .ac-gn-list{
+//      display: none;
+//      visibility: visible;
+//      transition-delay: 0s;
+//      position: absolute;
+//      z-index: 2;
+//      top: 48px;
+//      right: 0;
+//      bottom: 0;
+//      left: 0;
+//      margin: 0;
+//      padding: 0 48px;
+//      height: auto;
+//      box-sizing: border-box;
+//      overflow: hidden;
+//      overflow-y: auto;
+//      transition: visibility 0s linear 1s;
+//    }
+//    .ac-gn-apple{
+//      display: none;
+//    }
+//    .ac-gn-item{
+//      width: 100%;
+//      height: 48px;
+//    }
+//    #ac-globalnav .ac-gn-list :nth-child(2) {
+//      margin-top: 12px;
+//    }
+//    #ac-globalnav .ac-gn-item-menu{
+//      height: 47px;
+//      border-bottom: 1px solid #333;
+//      transition: opacity 0.35s ease-out, transform 0.35s ease-out;
+//    }
+//    #ac-globalnav .ac-gn-list :nth-child(8) {
+//      margin-bottom: 48px;
+//    }
+//    #ac-globalnav .ac-gn-search {
+//      border-bottom-color: silver;
+//    }
+//    #ac-globalnav .ac-gn-item-menu .ac-gn-link {
+//      background-position: left center;
+//      display: block;
+//      outline-offset: 0;
+//      padding: 0;
+//      width: auto;
+//      max-width: none;
+//    }
+//    #ac-globalnav .ac-gn-link-search {
+//      background-size: 22px 48px;
+//      background-image: url(./images/sousuo.svg);
+//    }
+//    #ac-globalnav .ac-gn-search-placeholder {
+//      margin-left: 28px;
+//      cursor: text;
+//      display: block;
+//    }
+//  }
+//}
+
+//iWatch
+.hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-content .copy-inner{
+  margin-top: 55px;
+}
+  .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-content .copy-inner .product-pro {
+    background-size: 184px 39px;
+    height: 39px;
+    width: 184px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(images/watch_medium.png);
+    margin-bottom: 0.25em;
+  }
+
+.ac-gallery-slidecontainer .hero-gallery-item-hero-apple_watch_trio .hero-content .hero-wrapper{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.ac-gallery-slidecontainer .hero-gallery-item-hero-apple_watch_trio .hero-content .hero-wrapper .hero-image-a{
+  position: absolute;
+  bottom: auto;
+  right: auto;
+  left: 0;
+  top: 0;
+  min-width: 316px;
+  min-height: 171px;
+  width: 50%;
+  height: 68%;
+  max-width: calc(100% - 316px);
+  max-height: calc(100% - 171px);
+}
+.ac-gallery-slidecontainer .hero-gallery-item-hero-apple_watch_trio .hero-content .hero-wrapper .hero-image-inner{
+  background-image: url(images/apple_watch_trio_medium.jpg);
+  background-size: 671px 314px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 671px;
+  height: 314px;
+  overflow: visible;
+  position: absolute;
+  top: auto;
+  left: auto;
+  bottom: -85px;
+  right: -305px;
+}
+
+@media screen and(max-width: $small){
+  .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-content .copy-inner{
+    margin-top: 25px;
+  }
+  .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-content .copy-inner .product-pro {
+    background-size: 144px 30px;
+    height: 30px;
+    width: 144px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(images/watch_small.png);
+    margin-bottom: 0.25em;
+  }
+  .ac-gallery-slidecontainer .hero-gallery-item-hero-apple_watch_trio .hero-content .hero-wrapper .hero-image-inner{
+    background-image: url(images/apple_watch_trio_small.jpg);
+    background-size: 263px 134px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 263px;
+    height: 134px;
+    overflow: visible;
+    position: absolute;
+    top: auto;
+    left: auto;
+    bottom: -110px;
+    right: -90px;
+  }
+}
+
+//iphone
+.hero-gallery .hero-gallery-item-hero-iphone_se .hero-content .copy-inner{
+  margin-top: 210px;
+  margin-left: 400px;
+}
+.hero-gallery .hero-gallery-item-hero-iphone_se .hero-content .copy-inner .product-pro {
+  background-size: 174px 39px;
+  height: 39px;
+  width: 174px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(images/iphone_se_medium.png);
+  margin-bottom: 0.25em;
+}
+
+.ac-gallery-slidecontainer .hero-gallery-item-hero-iphone_se .hero-content .hero-wrapper{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.ac-gallery-slidecontainer .hero-gallery-item-hero-iphone_se .hero-content .hero-wrapper .hero-image-a{
+  position: absolute;
+  bottom: auto;
+  right: auto;
+  left: 0;
+  top: 0;
+  min-width: 316px;
+  min-height: 171px;
+  width: 50%;
+  height: 68%;
+  max-width: calc(100% - 316px);
+  max-height: calc(100% - 171px);
+}
+.ac-gallery-slidecontainer .hero-gallery-item-hero-iphone_se .hero-content .hero-wrapper .hero-image-inner{
+  background-image: url(images/iphone_se_medium.jpg);
+  background-size: 580px 517px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 580px;
+  height: 517px;
+  overflow: visible;
+  position: absolute;
+  top: auto;
+  left: auto;
+  bottom: -115px;
+  right: -40px;
+}
+
+@media screen and(max-width: $small){
+  .hero-gallery .hero-gallery-item-hero-iphone_se .hero-content .copy-inner{
+    margin-top: 90px;
+    margin-left: 190px;
+  }
+  .hero-gallery .hero-gallery-item-hero-iphone_se .hero-content .copy-inner .product-pro {
+    background-size: 137px 30px;
+    height: 30px;
+    width: 137px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(images/iphone_se_small.png);
+    margin-bottom: 0.25em;
+  }
+  .ac-gallery-slidecontainer .hero-gallery-item-hero-iphone_se .hero-content .hero-wrapper .hero-image-inner{
+    background-image: url(images/iphone_se_small.jpg);
+    background-size: 200px 178px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 200px;
+    height: 178px;
+    overflow: visible;
+    position: absolute;
+    top: auto;
+    left: auto;
+    bottom: -55px;
+    right: 50px;
+  }
 }
