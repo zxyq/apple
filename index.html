@@ -1,537 +1,321 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Apple(中国) - 官方网站</title>
-    <link rel="stylesheet" href="index1.css"/>
-    <script src="./js/jquery-1.12.0.js"></script>
-    <script src="./js/index.js"></script>
-</head>
-<body>
+    <title>webapp</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="styles/main.css">
 
-<!--顶部导航-->
-<nav class="js no-touch svg no-ie7 no-ie8" id="ac-globalnav">
-    <div class="ac-gn-content">
-        <!--变小时候的布局-->
-        <ul class="ac-gn-header">
-            <li class="ac-gn-item ac-gn-menuicon small-list-sousuo">
-                <a href="#" class="ac-gn-menuanchor ac-gn-menuanchor-open">
-                    <span class="ac-gn-link-text">打开菜单</span>
-                </a>
-            </li>
-            <!--*****************************************-->
-            <ul class="ac-gn-list1 small-list">
-                <li class="ac-gn-item ac-gn-item-menu ac-gn-mac small-list-return" style="border: none">
-                    <a href="#" class="ac-gn-link ac-gn-link-mac">
-                        <span class="ac-gn-link-text">×</span>
-                    </a>
-                </li>
-                <li class="ac-gn-item ac-gn-item-menu ac-gn-mac" style="display: block">
-                    <a href="#" class="ac-gn-link ac-gn-link-mac" style="font-size: 20px">
-                        <span class="ac-gn-link-text">Mac</span>
-                    </a>
-                </li>
-                <li class="ac-gn-item ac-gn-item-menu ac-gn-ipad" style="display: block">
-                    <a href="#" class="ac-gn-link ac-gn-link-ipad" style="font-size: 20px">
-                        <span class="ac-gn-link-text">Ipad</span>
-                    </a>
-                </li>
-                <li class="ac-gn-item ac-gn-item-menu ac-gn-iphone" style="display: block">
-                    <a href="#" class="ac-gn-link ac-gn-link-iphone" style="font-size: 20px">
-                        <span class="ac-gn-link-text">Iphone</span>
-                    </a>
-                </li>
-                <li class="ac-gn-item ac-gn-item-menu ac-gn-watch" style="display: block">
-                    <a href="#" class="ac-gn-link ac-gn-link-watch" style="font-size: 20px">
-                        <span class="ac-gn-link-text">Watch</span>
-                    </a>
-                </li>
-                <li class="ac-gn-item ac-gn-item-menu ac-gn-music" style="display: block">
-                    <a href="#" class="ac-gn-link ac-gn-link-music" style="font-size: 20px">
-                        <span class="ac-gn-link-text">Music</span>
-                    </a>
-                </li>
-                <li class="ac-gn-item ac-gn-item-menu ac-gn-support" style="display: block">
-                    <a href="#" class="ac-gn-link ac-gn-link-support" style="font-size: 20px">
-                        <span class="ac-gn-link-text">技术与支持</span>
-                    </a>
-                </li>
-                <li class="ac-gn-item ac-gn-item-menu ac-gn-search" style="display: block">
-                    <a href="#" class="ac-gn-link ac-gn-link-search">
-                        <span class="ac-gn-search-placeholder" style="font-size: 20px">搜索 apple.com</span>
-                    </a>
-                </li>
+  </head>
+  <body>
+
+    <nav class="gn-nav">
+      <input type="checkbox" id="menu">
+      <div class="gn-content">
+        <ul class="gn-list">
+          <li class="gn-item gn-apple">
+            <a href="" class="gn-link"><span class="texthidden">Apple</span></a></li>
+          <li class="gn-item gn-mac">
+            <a href="" class="gn-link"><span class="texthidden">Mac</span></a>
+          </li>
+          <li class="gn-item gn-ipad">
+            <a href="" class="gn-link"><span class="texthidden">iPad</span></a>
+          </li>
+          <li class="gn-item gn-iphone">
+            <a href="" class="gn-link"><span class="texthidden">iPhone</span></a>
+          </li>
+          <li class="gn-item gn-watch">
+            <a href="" class="gn-link"><span class="texthidden">Watch</span></a>
+          </li>
+          <li class="gn-item gn-tv">
+            <a href="" class="gn-link"><span class="texthidden">TV</span></a>
+          </li>
+          <li class="gn-item gn-music">
+            <a href="" class="gn-link"><span class="texthidden">Music</span></a>
+          </li>
+          <li class="gn-item gn-support">
+            <a href="" class="gn-link"><span class="texthidden">Support</span></a>
+          </li>
+          <li class="gn-item gn-search">
+            <a href="" class="gn-link">
+              <span class="texthidden">Search</span>
+              <span class="search-placeholder">Search apple.com</span>
+            </a>
+          </li>
+          <li class="gn-item gn-bag">
+            <a href="" class="gn-link"><span class="texthidden">Bag</span></a>
+          </li>
+        </ul>
+        <ul class="gn-header">
+          <li class="gn-item gn-menu">
+            <label for="menu">
+              <span class="shang"></span>
+              <span class="xia"></span>
+            </label>
+            <span class="texthidden">open menu</span>
+          </li>
+          <li class="gn-item gn-apple">
+            <a href="" class="gn-link"><span class="texthidden">Apple</span></a>
+          </li>
+          <li class="gn-item gn-bag">
+            <a href="" class="gn-link"><span class="texthidden">Bag</span></a>
+          </li>
+        </ul>
+        <div class="gn-searchview">
+          <form action="" class="search-form">
+            <div class="search-wrapper">
+              <button class="search-sumbit"></button>
+              <input type="text" class="search-input" placeholder="Search apple.com">
+            </div>
+          </form>
+          <section class="search-section">
+            <h3>Quick Links</h3>
+            <ul class="search-list">
+              <li class="search-list"><a href="">Find a Store</a></li>
+              <li class="search-list"><a href="">Accessories</a></li>
+              <li class="search-list"><a href="">iPod</a></li>
+              <li class="search-list"><a href="">iOS</a></li>
+              <li class="search-list"><a href="">Gift Cards</a></li>
             </ul>
-            <!--************************************-->
-            <li class="ac-gn-item ac-gn-apple">
-                <a href="#" class="ac-gn-link ac-gn-link-apple">
-                    <span class="ac-gn-link-text">Apple</span>
-                </a>
-            </li>
-            <li class="ac-gn-item ac-gn-bag ac-gn-bag-small ac-gn-item-xiala">
-                <a href="#" class="ac-gn-link ac-gn-link-bag">
-                    <span class="ac-gn-link-text">购物袋</span>
-                </a>
-            </li>
-        </ul>
-        <!--变小的时候点击左边的下拉列表
-        <ul class="ac-gn-list">
-            <li class="ac-gn-item ac-gn-apple">
-                <a href="#" class="ac-gn-link ac-gn-link-apple">
-                    <span class="ac-gn-link-text">Apple</span>
-                </a>
-            </li>
-            <li class="ac-gn-item ac-gn-item-menu ac-gn-mac">
-                <a href="#" class="ac-gn-link ac-gn-link-mac">
-                    <span class="ac-gn-link-text">Mac</span>
-                </a>
-            </li>
-            <li class="ac-gn-item ac-gn-item-menu ac-gn-ipad">
-                <a href="#" class="ac-gn-link ac-gn-link-ipad">
-                    <span class="ac-gn-link-text">Ipad</span>
-                </a>
-            </li>
-            <li class="ac-gn-item ac-gn-item-menu ac-gn-iphone">
-                <a href="#" class="ac-gn-link ac-gn-link-iphone">
-                    <span class="ac-gn-link-text">Iphone</span>
-                </a>
-            </li>
-            <li class="ac-gn-item ac-gn-item-menu ac-gn-watch">
-                <a href="#" class="ac-gn-link ac-gn-link-watch">
-                    <span class="ac-gn-link-text">Watch</span>
-                </a>
-            </li>
-            <li class="ac-gn-item ac-gn-item-menu ac-gn-music">
-                <a href="#" class="ac-gn-link ac-gn-link-music">
-                    <span class="ac-gn-link-text">Music</span>
-                </a>
-            </li>
-            <li class="ac-gn-item ac-gn-item-menu ac-gn-support">
-                <a href="#" class="ac-gn-link ac-gn-link-support">
-                    <span class="ac-gn-link-text">技术与支持</span>
-                </a>
-            </li>
-            <li class="ac-gn-item ac-gn-item-menu ac-gn-search">
-                <a href="#" class="ac-gn-link ac-gn-link-search">
-                    <span class="ac-gn-search-placeholder">搜索 apple.com</span>
-                </a>
-            </li>
-        </ul> -->
-        <!--正常时候的布局-->
-        <ul class="ac-gn-list">
-            <li class="ac-gn-item ac-gn-apple">
-                <a href="#" class="ac-gn-link ac-gn-link-apple">
-                    <span class="ac-gn-link-text">Apple</span>
-                </a>
-            </li>
-            <li class="ac-gn-item ac-gn-item-menu ac-gn-mac">
-                <a href="#" class="ac-gn-link ac-gn-link-mac">
-                    <span class="ac-gn-link-text">Mac</span>
-                </a>
-            </li>
-            <li class="ac-gn-item ac-gn-item-menu ac-gn-ipad">
-                <a href="#" class="ac-gn-link ac-gn-link-ipad">
-                    <span class="ac-gn-link-text">Ipad</span>
-                </a>
-            </li>
-            <li class="ac-gn-item ac-gn-item-menu ac-gn-iphone">
-                <a href="#" class="ac-gn-link ac-gn-link-iphone">
-                    <span class="ac-gn-link-text">Iphone</span>
-                </a>
-            </li>
-            <li class="ac-gn-item ac-gn-item-menu ac-gn-watch">
-                <a href="#" class="ac-gn-link ac-gn-link-watch">
-                    <span class="ac-gn-link-text">Watch</span>
-                </a>
-            </li>
-            <li class="ac-gn-item ac-gn-item-menu ac-gn-music">
-                <a href="#" class="ac-gn-link ac-gn-link-music">
-                    <span class="ac-gn-link-text">Music</span>
-                </a>
-            </li>
-            <li class="ac-gn-item ac-gn-item-menu ac-gn-support">
-                <a href="#" class="ac-gn-link ac-gn-link-support">
-                    <span class="ac-gn-link-text">技术与支持</span>
-                </a>
-            </li>
-            <li class="ac-gn-item ac-gn-item-menu ac-gn-search">
-                <a href="#" class="ac-gn-link ac-gn-link-search">
-                    <span class="ac-gn-link-text">Mac</span>
-                </a>
-            </li>
-            <li class="ac-gn-item ac-gn-bag">
-                <a href="#" class="ac-gn-link ac-gn-link-bag">
-                    <span class="ac-gn-link-text"></span>
-                </a>
-            </li>
-        </ul>
-    </div>
-</nav>
-<!--banner-->
-<!--1.ipad pro-->
-<div class="page_below">
-
-<article class="hero-gallery with-paddlenav evergreen">
-    <!--下面三个点-->
-    <nav class="dotnav">
-        <ul>
-            <li role="presentation">
-                <a href="#" class="dotnav-item"></a>
-            </li>
-            <li role="presentation">
-                <a href="#" class="dotnav-item current"></a>
-            </li>
-            <li role="presentation">
-                <a href="#" class="dotnav-item"></a>
-            </li>
-        </ul>
-    </nav>
-    <!--左右箭头-->
-    <nav class="paddlenav paddlenav-onhover">
-        <ul>
-            <li>
-                <button class="paddlenav-arrow paddlenav-arrow-previous"></button>
-            </li>
-            <li>
-                <button class="paddlenav-arrow paddlenav-arrow-next"></button>
-            </li>
-        </ul>
-    </nav>
-    <!--大图-->
-    <div class="ac-gallery-slidecontainer"
-         style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; transition: transform 0s, left 0s; transform: translateX(-1349px) translateY(0px);">
-        <!--ipad pro-->
-        <section class="hero-gallery-item hero-gallery-item-hero-ipad_pro_family ac-gallery-currentitem"
-                 style="display:none;position: absolute; transform: translateZ(0px); left: 1349px;">
-            <div class="hero-content">
-                <a href="#" class="backing-link"></a>
-
-                <div class="copy">
-                    <div class="copy-inner">
-                        <h2 class="product-pro"></h2>
-
-                        <h3 class="product-text centeralign">
-                            你的下一台电脑，
-                            <br>
-                            现更以两种尺寸呈现。
-                        </h3>
-                        <ul class="links">
-                            <li>
-                                <a href="#">
-                                    进一步了解
-                                    <span class="icon icon-chevronright"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    观看影片
-                                    <span class="icon icon-play"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    观看主题演讲
-                                    <span class="icon icon-play"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="hero-wrapper">
-                    <figure class="hero-image hero-image-a">
-                        <div class="hero-image-inner"></div>
-                    </figure>
-                </div>
-            </div>
-        </section>
-        <!--iwatch-->
-        <section class="hero-gallery-item hero-gallery-item-hero-apple_watch_trio ac-gallery-currentitem"
-                 style="display:none;position: absolute; transform: translateZ(0px); left: 1349px;">
-            <div class="hero-content">
-                <a href="#" class="backing-link"></a>
-
-                <div class="copy">
-                    <div class="copy-inner">
-                        <h2 class="product-pro"></h2>
-
-                        <h3 class="product-text centeralign">
-                            一目了然，就是你。
-                        </h3>
-                        <ul class="links">
-                            <li>
-                                <a href="#">
-                                    进一步了解
-                                    <span class="icon icon-chevronright"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    观看主题演讲
-                                    <span class="icon icon-play"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="hero-wrapper">
-                    <figure class="hero-image hero-image-a">
-                        <div class="hero-image-inner"></div>
-                    </figure>
-                </div>
-            </div>
-        </section>
-        <!--iphone-->
-        <section class="hero-gallery-item hero-gallery-item-hero-iphone_se ac-gallery-currentitem"
-                 style="position: absolute; transform: translateZ(0px); left: 1349px;">
-            <div class="hero-content">
-                <a href="#" class="backing-link"></a>
-
-                <div class="copy">
-                    <div class="copy-inner">
-                        <h2 class="product-pro"></h2>
-
-                        <h3 class="product-text centeralign">
-                            一小部的一大步
-                        </h3>
-                        <ul class="links">
-                            <li>
-                                <a href="#">
-                                    进一步了解
-                                    <span class="icon icon-chevronright"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    观看主题演讲
-                                    <span class="icon icon-play"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="hero-wrapper">
-                    <figure class="hero-image hero-image-a">
-                        <div class="hero-image-inner"></div>
-                    </figure>
-                </div>
-            </div>
-        </section>
-    </div>
-</article>
-<!--2. iwatch-->
-<!--四个小图片-->
-<ul class="aside">
-    <li class="large-3 medium-6 small-12"><a href=""><span>iphone6s</span></a></li>
-    <li class="large-3 medium-6 small-12"><a href=""><span>ApplePay</span></a></li>
-    <li class="large-3 medium-6 small-12"><a href=""><span>Mac</span></a></li>
-    <li class="large-3 medium-6 small-12"><a href=""><span>越搭越出彩，选购我们的精选配件。</span></a></li>
-</ul>
-
-<div id="ac-globalfooter">
-    <div class="ac-gf-content">
-        <nav class="ac-gf-directory with-5-columns">
-            <!--选购及了解-->
-            <div class="ac-gf-directory-column">
-                <div class="ac-gf-directory-column-section">
-                    <input type="checkbox" id="xuangou"/>
-                    <label for="xuangou"><h3 class="ac-gf-directory-column-section-title">选购及了解</h3></label>
-                    <ul class="ac-gf-directory-column-section-list">
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">Mac</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">iPad</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">iPhone</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">Watch</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">Music</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">iTunes</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">iPod</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">配件</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!--app store 商店-->
-            <div class="ac-gf-directory-column">
-                <div class="ac-gf-directory-column-section">
-                    <input type="checkbox" id="shop"/>
-                    <label for="shop"><h3 class="ac-gf-directory-column-section-title">Apple Store 商店</h3></label>
-                    <ul class="ac-gf-directory-column-section-list">
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">查找零售店</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">Genius Bar 天才吧</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">讲座和学习</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">青少年活动</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">Apple Store App</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">翻新产品</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">分期付款</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">重复使用和循环利用</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">订单状态</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">选购帮助</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!--教育应用-->
-            <div class="ac-gf-directory-column">
-                <div class="ac-gf-directory-column-section">
-                    <input type="checkbox" id="jiaoyu"/>
-                    <label for="jiaoyu"><h3 class="ac-gf-directory-column-section-title">教育应用</h3></label>
-                    <ul class="ac-gf-directory-column-section-list">
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">Apple 与教育</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">高校师生选购</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="ac-gf-directory-column-section shangwuyingyong">
-                    <input type="checkbox" id="shangwu"/>
-                    <label for="shangwu"><h3 class="ac-gf-directory-column-section-title">商务应用</h3></label>
-                    <ul class="ac-gf-directory-column-section-list">
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">Apple 与商务</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">商务选购</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!--账户-->
-            <div class="ac-gf-directory-column">
-                <div class="ac-gf-directory-column-section">
-                    <input type="checkbox" id="zhanghu"/>
-                    <label for="zhanghu"><h3 class="ac-gf-directory-column-section-title">账户</h3></label>
-                    <ul class="ac-gf-directory-column-section-list">
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">管理你的 Apple ID</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">Apple Store 帐户</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">iCloud.com</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="ac-gf-directory-column-section applejiazhiguan">
-                    <input type="checkbox" id="jiazhiguan"/>
-                    <label for="jiazhiguan"><h3 class="ac-gf-directory-column-section-title">Apple 价值观</h3></label>
-                    <ul class="ac-gf-directory-column-section-list">
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">环境责任</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">供应商责任</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">辅助功能</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">隐私</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!--关于apple-->
-            <div class="ac-gf-directory-column">
-                <div class="ac-gf-directory-column-section">
-                    <input type="checkbox" id="guanyu"/>
-                    <label for="guanyu"><h3 class="ac-gf-directory-column-section-title">关于 Apple</h3></label>
-                    <ul class="ac-gf-directory-column-section-list">
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">Apple 资讯</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">工作机会</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">媒体资讯</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">活动</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">热点新闻</a>
-                        </li>
-                        <li class="ac-gf-directory-column-section-item">
-                            <a href="#" class="ac-gf-directory-column-section-link">联系 Apple</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!--最下面的两行-->
-        <div class="ac-gf-footer">
-            <!--更多选购方式-->
-            <div class="ac-gf-footer-shop">
-                更多选购方式：前往
-                <span class="nowrap" style="display: inline-block">
-                    <a href="#">Apple Store 零售店</a>
-                </span>
-                ，致电 400-666-8800 或查找在你附近的
-                <span class="nowrap" style="display: inline-block">
-                    <a href="#">授权经销商</a>
-                </span>
-                。
-            </div>
-            <!--中国-->
-            <div class="ac-gf-footer-locale">
-                <a href="#" class="ac-gf-footer-locale-link">
-                    <span class="ac-gf-footer-locale-flag"></span>
-                    中国
-                </a>
-            </div>
-            <!--保留所有权-->
-            <div class="ac-gf-footer-legal">
-                <div class="ac-gf-footer-legal-copyright">Copyright © 2016 Apple Inc. 保留所有权利。</div>
-                <div class="ac-gf-footer-legal-links">
-                    <a href="#" class="ac-gf-footer-legal-link">隐私政策</a>
-                    <a href="#" class="ac-gf-footer-legal-link">使用条款</a>
-                    <a href="#" class="ac-gf-footer-legal-link">销售政策</a>
-                    <a href="#" class="ac-gf-footer-legal-link">法律信息</a>
-                    <a href="#" class="ac-gf-footer-legal-link">网站地图</a>
-                </div>
-            </div>
+          </section>
         </div>
-        <p style="margin-top:-20px; margin-bottom:20px; color:#999;">京公安网安备 11010500896
-            <a href="#" style="color:#999;">京ICP备10214630</a>
-        </p>
+      </div>
+    </nav>
+
+
+    <div class="banner">
+      <div class="banner-inner">
+        <ul class="banner-slide">
+          <li class="banner-list watch_pro">
+            <a href=""><span class="texthidden">Watch</span></a>
+            <div class="copy-inner">
+              <h2 class="product_pro watch_logo"><a></a></h2>
+              <h3 class="product-text">一目了然，就是你。</h3>
+
+            </div>
+          </li>
+          <li class="banner-list ipad_pro">
+            <a href=""><span class="texthidden">iPad</span></a>
+            <div class="copy-inner">
+              <h2 class="product_pro ipad_logo"><a></a></h2>
+              <h3 class="product-text">你的下一部，<br>现更以两种尺寸呈现</h3>
+
+            </div>
+          </li>
+          <li class="banner-list iphone_pro">
+            <a href=""><span class="texthidden">iPhone</span></a>
+            <div class="copy-inner">
+              <h2 class="product_pro iphone_logo"><a></a></h2>
+              <h3 class="product-text">一小部的一大步</h3>
+
+            </div>
+          </li>
+        </ul>
+        <nav class="dotnav">
+          <ul>
+            <li class="circle"></li>
+            <li class="circle"></li>
+            <li class="circle"></li>
+          </ul>
+        </nav>
+        <button class="arrow arrow-prev"></button>
+        <button class="arrow arrow-next"></button>
+      </div>
     </div>
-</div>
-</div>
-</body>
+<script src="js/jquery-1.12.0.js"></script>
+<script>
+   var t=setInterval(move,2000);
+   var slide=$('.banner-slide');
+   var width=slide.find('.banner-list:eq(0)').outerWidth();
+   var flag=true;
+   function move(){
+     if(!flag){return;}
+     flag=false;
+     slide.animate({left:-width},600,function(){
+       $(this).append($(this).find('.banner-list:eq(0)'))
+       .css('left',0);
+       flag=true;
+     })
+   }
+   function move1(){
+     if(!flag){return;}
+     flag=false;
+     slide.find('.banner-list:last').insertBefore(slide.find('.banner-list:first'));
+     slide.css('left',-width+'px').animate({left:0},600,function(){
+       flag=true;
+     });
+   }
+   $('.banner-inner').on('mouseenter',function(){
+     clearInterval(t);
+   });
+   $('.banner-inner').on('mouseleave',function(){
+    t=setInterval(move,2000);
+   })
+   $('.arrow-next').on('click',move);
+   $('.arrow-prev').on('click',move1);
+</script>
+
+  <ul class="aside">
+    <li class="large-3 medium-6 small-12">
+      <a href=""><span class="texthidden">sdd</span></a>
+    </li>
+    <li class="large-3 medium-6 small-12">
+      <a href=""><span class="texthidden">ds</span></a>
+    </li>
+    <li class="large-3 medium-6 small-12">
+      <a href=""><span class="texthidden">ff</span></a>
+    </li>
+    <li class="large-3 medium-6 small-12">
+      <a href=""><span class="texthidden">dd</span></a>
+    </li>
+  </ul>
+
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="with-5-col nav">
+        <div class="col">
+          <input type="checkbox" id="a">
+          <div class="section">
+            <label for="a"><h3 class="title">Shop and Learn</h3></label>
+            <ul class="list">
+              <li class="items"><a href="">Mac</a></li>
+              <li class="items"><a href="">iPad</a></li>
+              <li class="items"><a href="">iPhone</a></li>
+              <li class="items"><a href="">Watch</a></li>
+              <li class="items"><a href="">TV</a></li>
+              <li class="items"><a href="">Music</a></li>
+              <li class="items"><a href="">iTunes</a></li>
+              <li class="items"><a href="">iPod</a></li>
+              <li class="items"><a href="">Accessories</a></li>
+              <li class="items"><a href="">Gift Cards</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <input type="checkbox" id="b">
+          <div class="section">
+            <label for="b"><h3 class="title">Apple Store</h3></label>
+            <ul class="list">
+              <li class="items"><a href="">Find a Store</a></li>
+              <li class="items"><a href="">Genius Bar</a></li>
+              <li class="items"><a href="">Workshops and Learning</a></li>
+              <li class="items"><a href="">Youth Programs</a></li>
+              <li class="items"><a href="">Apple Store App</a></li>
+              <li class="items"><a href="">Refurbished</a></li>
+              <li class="items"><a href="">Financing</a></li>
+              <li class="items"><a href="">Reuse and Recycling</a></li>
+              <li class="items"><a href="">Order Status</a></li>
+              <li class="items"><a href="">Order Status</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <input type="checkbox" id="c">
+          <div class="section">
+            <label for="c"><h3 class="title">For Education</h3></label>
+            <ul class="list">
+              <li class="items"><a href="">Apple and Education</a></li>
+              <li class="items"><a href="">Shop for College</a></li>
+            </ul>
+          </div>
+          <input type="checkbox" id="d">
+          <div class="section">
+            <label for="d"><h3 class="title">For Business</h3></label>
+            <ul class="list">
+              <li class="items"><a href="">Apple and Business</a></li>
+              <li class="items"><a href="">Shop for Business</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="section">
+            <input type="checkbox" id="e">
+            <label for="e"><h3 class="title">Account</h3></label>
+            <ul class="list">
+              <li class="items"><a href="">Manage Your Apple ID</a></li>
+              <li class="items"><a href="">Apple Store Account</a></li>
+              <li class="items"><a href="">iCloud.com</a></li>
+            </ul>
+          </div>
+          <div class="section">
+            <input type="checkbox" id="f">
+            <label for="f"><h3 class="title">Apple Values</h3></label>
+            <ul class="list">
+              <li class="items"><a href="">Environment</a></li>
+              <li class="items"><a href="">Supplier Responsibility</a></li>
+              <li class="items"><a href="">Accessibility</a></li>
+              <li class="items"><a href="">Privacy</a></li>
+              <li class="items"><a href="">Inclusion and Diversity</a></li>
+              <li class="items"><a href="">Education</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <input type="checkbox" id="g">
+          <div class="section">
+            <label for="g"><h3 class="title">About Apple</h3></label>
+            <ul class="list">
+              <li class="items"><a href="">Apple Info</a></li>
+              <li class="items"><a href="">Job Opportunities</a></li>
+              <li class="items"><a href="">Press Info</a></li>
+              <li class="items"><a href="">Investors</a></li>
+              <li class="items"><a href="">Events</a></li>
+              <li class="items"><a href="">Hot News</a></li>
+              <li class="items"><a href="">Contact Apple</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="gf-footer">
+        <div class="gf-footer-shop">
+           More ways to shop: Visit an
+           <a href=""> Apple Store</a>
+            call 1-800-MY-APPLE, or
+            <a href=""> find a reseller</a>
+            .
+        </div>
+        <div class="gf-footer-locale">
+          <a href="" class="locale-link">
+            <span class="locale-flag"></span>
+            United States
+          </a>
+        </div>
+        <div class="gf-footer-legal">
+          <div class="legal-copyright">Copyright © 2016 Apple Inc. All rights reserved.</div>
+          <div class="legal-links">
+            <a href="" class="legal-link">Privacy Policy</a>
+            <a href="" class="legal-link">Terms of Use</a>
+            <a href="" class="legal-link">Sales and Refunds</a>
+            <a href="" class="legal-link">Legal</a>
+            <a href="" class="legal-link">Site Map</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
 </html>
